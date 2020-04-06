@@ -1,0 +1,148 @@
+* {
+    color: #404040;
+    font-family: 'Questrial', 'Arial', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background-color: #EDEDED;
+    padding-bottom: 80px;
+}
+
+nav {
+    background-color: white;
+    border-top: 1px #E0E0E0 solid;
+    border-bottom: 1px #E0E0E0 groove;
+}
+
+.nav-link {
+    padding: 10px;
+    margin: 10px;
+}
+
+.navArticlePadding {
+    padding-top: 100px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 7.5vw;
+}
+
+h2 {
+    text-align: left;
+    font-size: 38px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    text-align: left;
+    font-size: 18px;
+    padding: 60px 0px;
+}
+
+.row {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.articleCard {
+    padding: 40px;
+    border-radius: 38px;
+    background-color: white;
+    border-bottom: 0.125rem #E0E0E0 groove;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+iframe {
+    border-radius: 19px;
+}
+
+.articleCardPadding {
+    padding-top: 6vw;
+}
+
+.requiredField::before {
+    content: "*";
+    color: red;
+}
+
+#requiredFieldPreamble {
+	font-size: 12px;
+}
+
+form {
+    padding: 40px;
+    padding-top: 10px;
+    border-radius: 19px;
+    border: 1px #E0E0E0 groove;
+}
+
+form label {
+    padding-top: 30px;
+}
+
+.formRadioSection {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px #E0E0E0 groove;
+}
+
+form input, textarea {
+    border-radius: 8px;
+    border: 1px #e0e0e0 groove;
+    padding: 6px 8px;
+}
+
+form input[type=submit], input[type=reset]{
+    background-color: #eaeaea;
+    border: none;
+    margin-right: 3px;
+}
+
+form input[type=reset]:hover, input[type=submit]:hover {
+    background-color: #606060;
+    color: white;
+}
+
+form input[type=reset]:active, input[type=submit]:active {
+    background-color: #404040;
+    color: white;
+}
+
+.formButtons {
+    padding-top: 20px;
+}
+
+.col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+textarea {
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .articleCardPadding {
+        padding-top: 100px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 128px;
+    }
+}
+

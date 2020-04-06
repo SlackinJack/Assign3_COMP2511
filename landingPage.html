@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>John Smith - Home</title>
+        <meta name="description" content="Home page for John Smith's website">
+        <meta name="keywords" content="John,Smith,Home">
+        <meta name="author" content="Jacky Guo 201635107">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                <div class="navbar-brand">John Smith</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="currentLink" href="landingPage.html" title="Home Page Link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resumePage.html" title="Resume Page Link">Resume Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="navArticlePadding"></div>
+
+            <article class="articleCard">
+                <h1>Welcome.</h1>
+                <div class="row">
+                    <p>
+                        Welcome to my home page. Firstly, I would like to thank you for expressing interest in my personal story.
+                        Here you will find all my information about myself, including my background, hobbies and more.
+                    </p>
+                </div>
+            </article>
+
+            <div class="articleCardPadding"></div>
+
+            <article class="articleCard">
+                <h1>Who am I?</h1>
+                <div class="row">
+                    <p>
+                        Born 'Steve Smith' on April 9th, 1975, in L.A. California, I was deeply involved as a child in musical productions. Ranging from piano to guitar,
+                        and even the ukulele, I mastered 7 instruments by the age of 9. I performed very well in band in middle school, the Los Angeles Academy Middle School,
+                        and was often sent on trips to perform and represent them. We, as a school, won multiple musical performance awards, including The USC Thornton School of Music Award,
+                        in which secured our band team a scholarship when we attended university.
+                        <br>
+                        <br>
+                        You may have noticed that my name was originally Steve. The move to change my name to John came about in my late-30's, in which a close childhood
+                        friend of mine, John Applewood, had passed away from a vehicular accident. He was the friend who was 'always there when you needed him'. A helpful
+                        and creative person he was. He was also a band member from the same middle school. In honor and tribute to his passing, I made the switch from Steve
+                        to John.
+                    </p>
+                </div>
+            </article>
+
+            <div class="articleCardPadding"></div>
+
+            <article class="articleCard">
+                <h1>Hobbies.</h1>
+                <div class="row">
+                    <p>
+                        My hobbies include:
+						<br>
+						
+						<br>
+                    </p>
+                    <ul style="padding-left: 20px;">
+                        <li>Learning new instruments.</li>
+                        <li>Creating music in <a href="https://www.image-line.com/flstudio/" target="_blank">FL Studio</a>.</li>
+                        <li>Working on cars in my free time.</li>
+                        <li>Programming as a volunteer, specifically for game modifications.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="articleCardPadding"></div>
+
+            <article class="articleCard">
+                <h1>Video.</h1>
+                <div class="row">
+                    <p>
+                        Check out this video:
+                        <br>
+                    </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w81f9T83tck" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </article>
+
+            <div class="articleCardPadding"></div>
+
+            <article class="articleCard">
+                <h1>Contact.</h1>
+                <div class="row">
+                    <div class="col">
+                        <p>You may reach me by filling in the form below.</p>
+                        <p class="requiredField" id="requiredFieldPreamble"> asterisk indicates a required field.<br><br></p>
+                        <form method="post" action="mailto:youremail@domain.com" name="contactForm">
+                            <input type="hidden" name="form" value="Contact Form">
+                            <label class="requiredField"> Your Name:
+                                <br>
+                                <input name="name" type="text" placeholder="Tim Apple" value="" maxlength="32" required>
+                            </label>
+                            <br>
+                            <label class="requiredField"> Phone:
+                                <br>
+                                <input name="tel" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="20" required>
+                            </label>
+                            <br>
+                            <div class="formRadioSection">
+                                Reason for inquiry:
+                                <br>
+                                <label><input name="reason" type="radio" value="businessPartner" checked> Business/Partnership</label>
+                                <br>
+                                <label><input name="reason" type="radio" value="moreInfo"> More Information</label>
+                                <br>
+                                <label><input name="reason" type="radio" value="other"> Other</label></div>
+
+                            <label> Additional Information:<br>
+                                <textarea name="info" cols="128" rows="3"></textarea>
+                            </label>
+                            <br>
+                            <div class="formButtons">
+                                <input type="submit" value="Send">
+                                <input type="reset" value="Clear">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <nav class="navbar fixed-bottom">
+                Website created by Jacky Guo (201635107), as part of a course requirement for COMP 2511.
+            </nav>
+        </div>
+    </body>
+</html>
